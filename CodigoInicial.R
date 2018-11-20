@@ -3,4 +3,5 @@ library(tidyverse)
 datos <- table1
 
 datos %>%
-  summarize( total = sum(cases))
+  mutate(prom = population / cases) %>% 
+  arrange(prom)
