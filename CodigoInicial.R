@@ -11,3 +11,6 @@ datos %>%
   ggplot(aes(country, prom, color = factor(year))) + 
   geom_point()
 
+# nueva tabla
+
+datos
